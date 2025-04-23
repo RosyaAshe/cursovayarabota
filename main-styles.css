@@ -1,0 +1,63 @@
+@import "header/header-style.css";
+
+* {
+    box-sizing: border  -box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(212, 231, 243);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+   object-fit: cover; 
+}
+
+.main__content{
+    padding: 19px 29px;
+    margin: 0 auto;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sell__items-list{
+    list-style-type: none;
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+
+.sell__title{
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 85px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    top: -78px;
+    left: 0;
+    opacity: 0.05;
+}
+
+.sell{
+    margin-bottom: 80px;
+    position: relative;
+}
