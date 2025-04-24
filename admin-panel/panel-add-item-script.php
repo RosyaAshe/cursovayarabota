@@ -5,6 +5,7 @@
     $name = $_POST['name'];
     $type = $_POST['type'];
     $image = $_POST['image'];
+    $maker = $_POST['maker'];
     $price = str_replace(',', '.', $_POST['price']);
 
     $images_dir = '../images';
@@ -16,7 +17,7 @@
     $sql = "SELECT * FROM products WHERE name = '$name'";
     $sql = $conn->query($sql);
     $sql = $sql->fetch_assoc();
-    if($sql['name'] === $name){
+    if($sql['name'] === $name && $sql['maker'] === $maker){
         echo 'такой товар существует';
     } else {
         if(isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK){

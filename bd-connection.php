@@ -1,5 +1,6 @@
 <?php
-    $host = 'MySQl-5.7';
+    //$host = 'MySQl-5.7';
+    //$host = 'localhost';
     $user = 'root';
     $password = '';
     $database = 'shop_db';
